@@ -1,0 +1,112 @@
+/* นำเข้าฟอนต์จาก Google Fonts เพื่อความสวยงาม */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
+/* ตั้งค่าพื้นหลังและฟอนต์หลักของหน้าเว็บ */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    max-width: 600px; /* จำกัดความกว้างของหน้าเว็บ */
+    margin: 40px auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* เพิ่มเงาให้ดูมีมิติ */
+}
+
+/* จัดรูปแบบหัวข้อ */
+#top {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* ตกแต่งเส้นคั่นให้นุ่มนวลขึ้น */
+hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin: 15px 0;
+}
+
+/* ตกแต่งกล่องข้อความ Topic และ Reply */
+#topic, #reply1, #reply2 {
+    min-height: 24px; /* ความสูงเริ่มต้นตอนที่ยังไม่มีข้อความ */
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    line-height: 1.5;
+    word-wrap: break-word; /* ป้องกันข้อความยาวทะลุกรอบ */
+}
+
+/* สไตล์เฉพาะของหัวข้อ (Topic) */
+#topic {
+    background-color: #e7f1ff; /* พื้นหลังสีฟ้าอ่อน */
+    border-left: 5px solid #0d6efd; /* แถบสีฟ้าด้านซ้าย */
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* สไตล์เฉพาะของการตอบกลับ (Reply) */
+#reply1, #reply2 {
+    background-color: #f8f9fa; /* พื้นหลังสีเทาอ่อน */
+    border-left: 5px solid #198754; /* แถบสีเขียวด้านซ้าย */
+    margin-left: 30px; /* ร่นระยะเข้ามาให้ดูเป็นการตอบกลับ */
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* ตกแต่งกล่องพิมพ์ข้อความ (Textarea) */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* ป้องกันกล่องล้นขอบ */
+    font-family: inherit;
+    font-size: 1em;
+    resize: vertical; /* อนุญาตให้ขยายขนาดแนวตั้งได้เท่านั้น */
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0d6efd; /* เปลี่ยนสีขอบเมื่อคลิกพิมพ์ */
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.2);
+}
+
+/* ตกแต่งปุ่มกด */
+button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+/* ปุ่ม Post (ปุ่มแรก) */
+button:nth-of-type(1) {
+    background-color: #0d6efd;
+    color: white;
+}
+
+button:nth-of-type(1):hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อยเมื่อชี้เมาส์ */
+}
+
+/* ปุ่ม Clear (ปุ่มที่สอง) */
+button:nth-of-type(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #bb2d3b;
+    transform: translateY(-2px);
+}
